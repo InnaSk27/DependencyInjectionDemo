@@ -35,23 +35,23 @@
 // 6 - Now comes the fun part. Program.cs, where the dependencies are to be injected, and the containers built. 
 // Since this can be a topic hard to grasp, we will first add only this code for the whole Program.cs:
 
-   using DependencyInjectionDemo.Contracts;
+    using DependencyInjectionDemo.Contracts;
     using DependencyInjectionDemo.Services;
-    using Microsoft.Extensions.DependencyInjection;
+    using Autofac;
 
-    namespace DependencyInjectionDemo.Program;
+    namespace DependencyInjectionDemo;
 
     class Program
     {
         static void Main(string[] args)
         {
-            var services = new ServiceCollection();
+            var builder = new ContainerBuilder();
 
-            services.AddScoped<INotificationService, NotificationService>();
+            builder.RegisterType<NotificationService>().As<INotificationService>();
 
-            var container = services.BuildServiceProvider();
+            var container = builder.Build();
 
-            var notificationService = container.GetService<INotificationService>();
+            var notificationService = container.Resolve<INotificationService>();
 
             notificationService?.Notify("Hello Dependency Injection!");
         }
@@ -63,7 +63,8 @@
 // Understanding this is crucial, as this will not be shown in the editor as an error, but will explode as soon as you try to run an application that has a dependency that has not been defined.
 
 // 7 - Add the missing scope.
-
-         services.AddScoped<IMessageService, MessageService>();
+            
+            builder.RegisterType<MessageService>()
+            .As<IMessageService>();
 
 
