@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XGJRMZz8t2M=",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\DependencyInjectionDemo\\DependencyInjectionDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\noro-Ariana.Rubio\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.3\\microsoft.extensions.dependencyinjection.10.0.3.nupkg.sha512",
+    "C:\\Users\\noro-Ariana.Rubio\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
