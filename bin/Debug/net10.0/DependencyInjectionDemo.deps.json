@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v10.0": {
       "DependencyInjectionDemo/1.0.0": {
         "dependencies": {
+          "Autofac": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "10.0.3"
         },
         "runtime": {
           "DependencyInjectionDemo.dll": {}
+        }
+      },
+      "Autofac/9.0.0": {
+        "runtime": {
+          "lib/net10.0/Autofac.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/10.0.3": {
@@ -40,6 +49,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G8TpUMVIq1pEAMuAao8h5MKduY91SotjgK93wQb5LaxbJUVE0/XjCA6t2SOp+AkPC3GB/C2MAiF2D7krYjraFw==",
+      "path": "autofac/9.0.0",
+      "hashPath": "autofac.9.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/10.0.3": {
       "type": "package",

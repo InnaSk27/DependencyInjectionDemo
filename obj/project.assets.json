@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "Autofac/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/10.0.3": {
         "type": "package",
         "dependencies": {
@@ -40,6 +53,27 @@
     }
   },
   "libraries": {
+    "Autofac/9.0.0": {
+      "sha512": "G8TpUMVIq1pEAMuAao8h5MKduY91SotjgK93wQb5LaxbJUVE0/XjCA6t2SOp+AkPC3GB/C2MAiF2D7krYjraFw==",
+      "type": "package",
+      "path": "autofac/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.9.0.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net10.0/Autofac.dll",
+        "lib/net10.0/Autofac.xml",
+        "lib/net8.0/Autofac.dll",
+        "lib/net8.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/10.0.3": {
       "sha512": "2DLOmC0EkB2smVK8lPP1PIKEgL1arE3CMp9XSIQB/Y7ev5nnnyuM/PizKJ6QfLD08QCYoopSC9SFdbYglDomYg==",
       "type": "package",
@@ -105,6 +139,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Autofac >= 9.0.0",
       "Microsoft.Extensions.DependencyInjection >= 10.0.3"
     ]
   },
@@ -114,11 +149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\DependencyInjectionDemo\\DependencyInjectionDemo.csproj",
+      "projectUniqueName": "C:\\Repos\\DependencyInjectionDemo\\DependencyInjectionDemo.csproj",
       "projectName": "DependencyInjectionDemo",
-      "projectPath": "C:\\repos\\DependencyInjectionDemo\\DependencyInjectionDemo.csproj",
+      "projectPath": "C:\\Repos\\DependencyInjectionDemo\\DependencyInjectionDemo.csproj",
       "packagesPath": "C:\\Users\\noro-Ariana.Rubio\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\DependencyInjectionDemo\\obj\\",
+      "outputPath": "C:\\Repos\\DependencyInjectionDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\noro-Ariana.Rubio\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -151,6 +186,10 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[10.0.3, )"

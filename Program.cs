@@ -1,6 +1,6 @@
 ﻿using DependencyInjectionDemo.Contracts;
 using DependencyInjectionDemo.Services;
-using Microsoft.Extensions.DependencyInjection;
+using Autofac;
 
 namespace DependencyInjectionDemo;
 
@@ -8,14 +8,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        var services = new ServiceCollection();
+        var builder = new ContainerBuilder();
 
-        services.AddScoped<INotificationService, NotificationService>();
-        services.AddScoped<IMessageService, MessageService>();
+        builder.RegisterType<NotificationService>().As<INotificationService>();
+        builder.RegisterType<MessageService>().As<IMessageService>();
 
-        var container = services.BuildServiceProvider();
+        var container = builder.Build();
 
-        var notificationService = container.GetService<INotificationService>();
+        var notificationService = container.Resolve<INotificationService>();
 
         notificationService?.Notify("Hello Dependency Injection!");
     }

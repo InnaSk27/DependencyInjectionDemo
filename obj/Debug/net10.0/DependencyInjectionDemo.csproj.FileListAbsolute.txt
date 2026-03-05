@@ -17,3 +17,4 @@ C:\Repos\DependencyInjectionDemo\obj\Debug\net10.0\refint\DependencyInjectionDem
 C:\Repos\DependencyInjectionDemo\obj\Debug\net10.0\DependencyInjectionDemo.pdb
 C:\Repos\DependencyInjectionDemo\obj\Debug\net10.0\DependencyInjectionDemo.genruntimeconfig.cache
 C:\Repos\DependencyInjectionDemo\obj\Debug\net10.0\ref\DependencyInjectionDemo.dll
+C:\Repos\DependencyInjectionDemo\bin\Debug\net10.0\Autofac.dll
