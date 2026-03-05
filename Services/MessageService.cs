@@ -1,7 +1,9 @@
+using DependencyInjectionDemo.Contracts;
 
 namespace DependencyInjectionDemo.Services;
 
-public class MessageService
+
+public class MessageService : IMessageService
 {
     public void Send(string message)
     {
