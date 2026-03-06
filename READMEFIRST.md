@@ -1,6 +1,6 @@
 // This is a project made for the students to understand the basics and the need for Dependency Injection. 
 
-// It does NOT include frameworks such as AutoFac nor Modules so this is just basic stuff, those aspects will be covered in part two, called DependencyInjectionDemoTwo.
+// It does NOT include Modules so this is just basic stuff.
 
 // This is a setp-to-step guide on how to copy-code this project, the aim is for the project to fail at certain times, and give errors that we will be solving, again, this is made so the students understand how and why it works.
 

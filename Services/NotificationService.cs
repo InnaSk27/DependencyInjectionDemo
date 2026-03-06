@@ -5,7 +5,6 @@ namespace DependencyInjectionDemo.Services;
 public class NotificationService: INotificationService
 {
     public IMessageService _messageService;
-
     public NotificationService(IMessageService messageService)
     {
         _messageService = messageService;
@@ -15,4 +14,16 @@ public class NotificationService: INotificationService
     {
         _messageService.Send(message);
     }
+
+    public int IncrementAndSeeCount()
+    {
+       return _messageService.IncrementAndSeeCount();
+    }
+    public int IncrementAndSeeCountTwo()
+    {
+        return _messageService.IncrementAndSeeCount();
+    }
+
+
+
 }
